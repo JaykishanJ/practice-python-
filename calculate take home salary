@@ -1,0 +1,11 @@
+#first define funcation that can give tax lets imagine pay is hourly basis 
+#so pay is 15$ per hour 
+#calculate the tax we use formula where tax is 12% 
+
+def get_pay(num_hour):
+  pay=num_hour*15
+  take_home=pay*(1-0.12)
+  return take_home
+
+take_home_salary=get_pay(20)
+print(take_home_salary)
