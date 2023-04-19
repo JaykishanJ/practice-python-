@@ -9,3 +9,14 @@ def get_pay(num_hour):
 
 take_home_salary=get_pay(20)
 print(take_home_salary)
+
+
+
+#let see you have to take all input from yousr 
+#here we give previlage to the user to decide hourly pay wage as well as text 
+def get_pay(num_hour, hourly_pay, tax):
+    pay=num_hour*hourly_pay 
+    take_home=pay*(tax/100)
+    return take_home
+take_home_salary=get_pay(12, 45, 12)
+print(take_home_salary)
